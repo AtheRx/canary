@@ -18,7 +18,7 @@ canary:
   enabled: true
   replicaCount: 1
   image:
-    tag: "v2"
+    tag: "v3"
 
 config:
   main:
@@ -30,6 +30,8 @@ config:
 
 serviceMonitor:
   enabled: true
+  labels: 
+    - instance: 
 
 slo:
   availability:
